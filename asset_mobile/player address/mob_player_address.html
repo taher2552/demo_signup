@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="asset_mobile/css/mob_academy_register.css" />
+
+    <script src="jquery-3.7.1.min.js"></script>
+       
+    
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKKzPfrnhLHFG7xMO-snpRQ7ULl91iOQw&libraries=places"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <section class="mob_login_container">
+        <div class="mob_top_logo">
+            <img src="asset_mobile/images/logo.svg" alt="" />
+        </div>
+
+        <div class="mob_login_account_wrapper">
+            <p class="mob_login_authenticate">Intro & Address</p>
+        </div>
+
+        <div class="mob_academy_progress">
+            <div class="mob_academy_circle mob_academy_stage">
+                1
+            </div>
+            <div class="mob_academy_line"></div>
+            <div class="mob_academy_circle mob_academy_stage">
+                2
+            </div>
+            <div class="mob_academy_line"></div>
+            <div class="mob_academy_circle">
+                3
+            </div>
+
+        </div>
+
+
+        <div class="mob_address_wrapper">
+        
+            <div class="mob_manual_address_input mob_manual_flex_start player_add">
+                <label for="" class="mob_font mob_que">Why are you creating profile? <span>*</span></label>
+                <select name="" class="mob_manual_exp" id="">
+                    <option value="">Select Your Answer</option>
+                    <option value="">To learn sport</option>
+                </select>
+            </div>
+
+            <div class="mob_address_head">
+                <p class="mob_font mob_que">Your Address <span>*</span></p>
+
+                <div class="mobile_login_check">
+                    <label class="mobile_login_label_checkbox">
+                        <input type="checkbox"  id="addManuallyCheckbox" />
+                        <span class="mobile_login_checkbox"></span>
+                        <p class="mob_manually">Add manually</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mob_address_search_wrapper">
+        
+            <div class="city_search_container" id="citySearchContainer">
+                <div class="city_search_icon">
+                    <i class="fa fa-search search_color"></i>
+                </div>
+
+                    <input type="text" class="city_search_input mob_font mob_address_new"
+                    placeholder="Search for your city by name or pin code" id="city_box" onchange="locationAdmin.check_exits_city()">
+
+                
+            </div>
+
+            <div class="mob_manual_address_input" id="manualAddressInput">
+                <input class="mob_font" type="text" placeholder="Address Line 1">
+                <input class="mob_font" type="text" placeholder="Address Line 2">
+                <input class="mob_font" type="text" placeholder="Landmark">
+                <input class="mob_font" type="text" placeholder="City">
+                <input class="mob_font" type="text" placeholder="State">
+                <input class="mob_font" type="text" placeholder="Pin Code">
+            </div>
+
+            <div class="mob_age_gender">
+
+                <div class="mob_manual_address_input mob_manual_flex_start">
+                    <label for="" class="mob_font mob_que mob_age">What is your age? <span>*</span></label>
+                    <input type="text" class="city_search_input mob_font mob_address_new"
+                    placeholder="Enter age in Years">
+                </div>
+                
+                <div class="mob_manual_flex_start gender_div">
+                    <label for="" class="mob_font mob_que mob_age">Select your gender? <span>*</span></label>
+                    <div class="mob_player_gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" class="mob_gender mob_font">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="mob_gender mob_font">Female</label><br>
+                    </div>
+    
+                </div>
+
+            </div>
+
+
+            <div class="mob_manual_address_input mob_manual_flex_start">
+                <label for="" class="mob_font mob_que">Select a sport you play <span>*</span></label>
+                <select name="" class="mob_manual_exp" id="">
+                    <option value="">Select Your Answer</option>
+                    <option value="">Football</option>
+                    <option value="">Basketball</option>
+                    <option value="">Cricket</option>
+                    <option value="">Hockey</option>
+                    <option value="">Badminton</option>
+                    <option value="">Tennis</option>
+                    <option value="">Golf</option>
+                </select>
+            </div>
+
+            <div class="mob_manual_address_input mob_manual_flex_start">
+                <label for="" class="mob_font mob_que">Any Club/Institute you play with? <span>*</span></label>
+                <input type="text" class="city_search_input mob_font mob_address_new"
+                    placeholder="Enter Club/institute">
+            </div>
+
+
+
+
+            <!-- <div class="mob_manual_flex_start">
+                <label for="" class="mob_font mob_que">How do you charge? <span>*</span></label>
+                <div class="city_search_container">
+                    <div class="city_search_icon">
+                        ₹
+                    </div>
+                    <input type="number" class="city_search_input mob_font" placeholder="Enter Price">
+                </div>
+            </div> -->
+
+            <div class="mob_manual_address_input mob_manual_flex_start mob_space">
+                <label for="" class="mob_font mob_que">Add your introduction <span>*</span></label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Eg: Achievements, Certifications, Past records and history that you have played."></textarea>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="mob_login_create_profile">
+                <button>Save</button>
+            </div>
+
+
+
+
+    </section>
+
+</body>
+
+<script src="asset_mobile/js/mob_player_address.js"></script>
+
+
+</html>
